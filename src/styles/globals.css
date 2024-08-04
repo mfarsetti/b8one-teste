@@ -87,12 +87,8 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #eaebee;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -103,5 +99,29 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+
+.slick-slider{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.slick-list {
+  width: 50%;
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 600px){
+  .slick-list {
+    width: 100%;
   }
 }
